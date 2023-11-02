@@ -1,5 +1,12 @@
 {
   "dependencyDashboard": true,
+  "packageRules": [
+    {
+      "matchPackageNames": ["node"],
+      "matchManagers": ["regex"],
+      "extractVersion": "^v(?<version>.*)$"
+    }
+  ],
   "regexManagers": [
     {
       "description": "Update _VERSION variables in Dockerfiles",
